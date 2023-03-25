@@ -8,7 +8,7 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
-## Your Explanation Here
+## Refactor Explanation
 The code has been refactored to simplify it by eliminating unnecessary checks and consolidating the logic into fewer lines of code. The following changes have been made:
 
 1. The code now returns the default case when the event parameter does not exist.
