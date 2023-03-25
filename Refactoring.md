@@ -9,3 +9,9 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+The code has been refactored to simplify it by eliminating unnecessary checks and consolidating the logic into fewer lines of code. The following changes have been made:
+
+1. The code now returns the default case when the event parameter does not exist.
+2. It returns a partition key, which is a hashed string, if the partitionKey property is not present in the event object.
+3. It converts the partition key property to a string if it is not already a string.
+4. It hashes the partition key string if it exceeds the maximum partition key length before returning it.
