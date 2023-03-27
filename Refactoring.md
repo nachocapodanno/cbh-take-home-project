@@ -15,3 +15,5 @@ The code has been refactored to simplify it by eliminating unnecessary checks an
 2. It returns a partition key, which is a hashed string, if the partitionKey property is not present in the event object.
 3. It converts the partition key property to a string if it is not already a string.
 4. It hashes the partition key string if it exceeds the maximum partition key length before returning it.
+
+Also, I created a constans file to put there all strings we have and to create a unique point for this info.
